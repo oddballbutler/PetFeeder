@@ -213,3 +213,10 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+#############
+## Atmel Studio
+#############
+*.atsln
+*.atsuo
+*.cproj
