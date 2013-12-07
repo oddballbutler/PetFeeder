@@ -8,9 +8,9 @@
 */
 #define F_CPU 1200000
 
-#define _SHIFT_TEST
+//#define _SHIFT_TEST
 //#define _BUTTON_TEST
-//#define _LCD_TEST
+#define _LCD_TEST
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -72,6 +72,8 @@ int main(void)
 	PORTB = 0x00;
 	
 	#elif defined(_LCD_TEST)
+	DDRB = 0xFF; // All pins are outputs
+	PORTB = 0x00; // Set all pins low
 	
 	#endif
 	///////////////////////////////////////////////////////////////////////////////////////////
@@ -82,9 +84,196 @@ int main(void)
 	#elif defined(_SHIFT_TEST)
 	
 	#elif defined(_LCD_TEST)
-	
+	static uint8_t command = 0;
 	#endif
 	///////////////////////////////////////////////////////////////////////////////////////////
+	
+	#ifdef _BUTTON_TEST
+	
+	#elif defined(_SHIFT_TEST)
+	
+	#elif defined(_LCD_TEST)
+	//Initialize LCD
+	_delay_ms(20);
+	command = 0x30;
+	shift_out(&command);
+	command = 0x38;
+	shift_out(&command);
+	command = 0x30;
+	shift_out(&command);
+	_delay_ms(5);
+	
+	command = 0x30;
+	shift_out(&command);
+	command = 0x38;
+	shift_out(&command);
+	command = 0x30;
+	shift_out(&command);
+	_delay_us(200);
+	
+	command = 0x30;
+	shift_out(&command);
+	command = 0x38;
+	shift_out(&command);
+	command = 0x30;
+	shift_out(&command);
+	_delay_us(200);
+	
+	command = 0x20;
+	shift_out(&command);
+	command = 0x28;
+	shift_out(&command);
+	command = 0x20;
+	shift_out(&command);
+	_delay_ms(5);
+	
+	command = 0x20;
+	shift_out(&command);
+	command = 0x28;
+	shift_out(&command);
+	command = 0x20;
+	shift_out(&command);
+	command = 0x80;
+	shift_out(&command);
+	command = 0x88;
+	shift_out(&command);
+	command = 0x80;
+	shift_out(&command);
+	_delay_ms(5);
+	
+	command = 0x00;
+	shift_out(&command);
+	command = 0x08;
+	shift_out(&command);
+	command = 0x00;
+	shift_out(&command);
+	command = 0x80;
+	shift_out(&command);
+	command = 0x88;
+	shift_out(&command);
+	command = 0x80;
+	shift_out(&command);
+	_delay_ms(5);
+	
+	command = 0x00;
+	shift_out(&command);
+	command = 0x08;
+	shift_out(&command);
+	command = 0x00;
+	shift_out(&command);
+	command = 0x10;
+	shift_out(&command);
+	command = 0x18;
+	shift_out(&command);
+	command = 0x10;
+	shift_out(&command);
+	_delay_ms(5);
+	
+	command = 0x00;
+	shift_out(&command);
+	command = 0x08;
+	shift_out(&command);
+	command = 0x00;
+	shift_out(&command);
+	command = 0x60;
+	shift_out(&command);
+	command = 0x68;
+	shift_out(&command);
+	command = 0x60;
+	shift_out(&command);
+	_delay_ms(5);
+	
+	command = 0x00;
+	shift_out(&command);
+	command = 0x08;
+	shift_out(&command);
+	command = 0x00;
+	shift_out(&command);
+	command = 0xc0;
+	shift_out(&command);
+	command = 0xc8;
+	shift_out(&command);
+	command = 0xc0;
+	shift_out(&command);
+	_delay_ms(5);
+	
+	command = 0x42;
+	shift_out(&command);
+	command = 0x4a;
+	shift_out(&command);
+	command = 0x42;
+	shift_out(&command);
+	command = 0x82;
+	shift_out(&command);
+	command = 0x8a;
+	shift_out(&command);
+	command = 0x82;
+	shift_out(&command);
+	_delay_us(200);
+	
+	_delay_ms(1000);
+	
+	command = 0x62;
+	shift_out(&command);
+	command = 0x6a;
+	shift_out(&command);
+	command = 0x62;
+	shift_out(&command);
+	command = 0x52;
+	shift_out(&command);
+	command = 0x5a;
+	shift_out(&command);
+	command = 0x52;
+	shift_out(&command);
+	_delay_us(200);
+	
+	_delay_ms(1000);
+	
+	command = 0x62;
+	shift_out(&command);
+	command = 0x6a;
+	shift_out(&command);
+	command = 0x62;
+	shift_out(&command);
+	command = 0xc2;
+	shift_out(&command);
+	command = 0xca;
+	shift_out(&command);
+	command = 0xc2;
+	shift_out(&command);
+	_delay_us(200);
+
+	_delay_ms(1000);
+	
+	command = 0x62;
+	shift_out(&command);
+	command = 0x6a;
+	shift_out(&command);
+	command = 0x62;
+	shift_out(&command);
+	command = 0xc2;
+	shift_out(&command);
+	command = 0xca;
+	shift_out(&command);
+	command = 0xc2;
+	shift_out(&command);
+	_delay_us(200);
+		
+	/*
+	Make Sure "EN" is 0 or low
+	Set "R/S" to 0 for a command, or 1 for data/characters
+	Put the HIGH BYTE of the data/command on D7-4
+	Set "EN" (EN= 1 or High)
+	Wait At Least 450 ns!!!
+	Clear "EN" (EN= 0 or Low)
+	Wait 5ms for command writes, and 200us for data writes.
+	Put the LOW BYTE of the data/command on D7-4
+	Wait At Least 450 ns!!!
+	Clear "EN" (EN= 0 or Low)
+	Wait 5ms for command writes, and 200us for data writes.
+	*/
+	
+	#endif
 	while(1)
 	{
 		#ifdef _BUTTON_TEST
@@ -103,6 +292,7 @@ int main(void)
 		_delay_ms(500);
 		
 		#elif defined(_LCD_TEST)
+		
 		
 		#endif
 	}

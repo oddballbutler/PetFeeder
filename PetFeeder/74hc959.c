@@ -11,13 +11,13 @@
 void shift_out(uint8_t * data_p)
 {
 	uint8_t i;
-	uint8_t j;
+	int8_t j;
 	RCLK_LOW_74HC595();  // Set the storage register clock pin low
 
 	for (i = 0; i < NUM_REG; i++)
 	{	// Now we are entering the loop to shift out 8+ bits
 		uint8_t data = data_p[i];
-		for (j = 0; j < 8; j++)
+		for (j = 7; j >= 0; j--)
 		{
 			SRCLK_LOW_74HC595();  // Set the shift register clock pin low
 			WRITE_SER_74HC595(data,j);  // Output the next bit onto the serial pin

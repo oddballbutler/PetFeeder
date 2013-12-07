@@ -67,7 +67,7 @@ int main(){
 /************************************************************************/
 
 /**
- * \brief This is a FIFO shift register function.
+ * \brief This is a FIFO shift register function. It will output most significant bit first of each byte.
  * 
  * \param data_p A pointer to the byte array that you wish to output onto the shift registers.
  * 
