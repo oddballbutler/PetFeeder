@@ -220,3 +220,11 @@ pip-log.txt
 *.atsln
 *.atsuo
 *.cproj
+
+#############
+## XCode
+#############
+
+*.xcuserstate
+xcdebugger/
+xcuserdata/

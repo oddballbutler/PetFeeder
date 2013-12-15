@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A38D88CD185D608F0093F33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38D88CC185D608F0093F33D /* Foundation.framework */; };
+		A38D88CF185D608F0093F33D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38D88CE185D608F0093F33D /* CoreGraphics.framework */; };
+		A38D88D1185D608F0093F33D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38D88D0185D608F0093F33D /* UIKit.framework */; };
+		A38D88D7185D608F0093F33D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A38D88D5185D608F0093F33D /* InfoPlist.strings */; };
+		A38D88D9185D608F0093F33D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A38D88D8185D608F0093F33D /* main.m */; };
+		A38D88DD185D608F0093F33D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A38D88DC185D608F0093F33D /* AppDelegate.m */; };
+		A38D88E0185D608F0093F33D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38D88DE185D608F0093F33D /* Main_iPhone.storyboard */; };
+		A38D88E3185D608F0093F33D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38D88E1185D608F0093F33D /* Main_iPad.storyboard */; };
+		A38D88E6185D608F0093F33D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38D88E5185D608F0093F33D /* FirstViewController.m */; };
+		A38D88E9185D608F0093F33D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38D88E8185D608F0093F33D /* SecondViewController.m */; };
+		A38D88EB185D608F0093F33D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38D88EA185D608F0093F33D /* Images.xcassets */; };
+		A38D88F2185D608F0093F33D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38D88F1185D608F0093F33D /* XCTest.framework */; };
+		A38D88F3185D608F0093F33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38D88CC185D608F0093F33D /* Foundation.framework */; };
+		A38D88F4185D608F0093F33D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38D88D0185D608F0093F33D /* UIKit.framework */; };
+		A38D88FC185D608F0093F33D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A38D88FA185D608F0093F33D /* InfoPlist.strings */; };
+		A38D88FE185D608F0093F33D /* Pet_Feeder_CompanionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A38D88FD185D608F0093F33D /* Pet_Feeder_CompanionTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A38D88F5185D608F0093F33D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A38D88C1185D608F0093F33D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A38D88C8185D608F0093F33D;
+			remoteInfo = "Pet Feeder Companion";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A38D88C9185D608F0093F33D /* Pet Feeder Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Feeder Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38D88CC185D608F0093F33D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A38D88CE185D608F0093F33D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A38D88D0185D608F0093F33D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A38D88D4185D608F0093F33D /* Pet Feeder Companion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pet Feeder Companion-Info.plist"; sourceTree = "<group>"; };
+		A38D88D6185D608F0093F33D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A38D88D8185D608F0093F33D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A38D88DA185D608F0093F33D /* Pet Feeder Companion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pet Feeder Companion-Prefix.pch"; sourceTree = "<group>"; };
+		A38D88DB185D608F0093F33D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A38D88DC185D608F0093F33D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A38D88DF185D608F0093F33D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		A38D88E2185D608F0093F33D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		A38D88E4185D608F0093F33D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		A38D88E5185D608F0093F33D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		A38D88E7185D608F0093F33D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A38D88E8185D608F0093F33D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A38D88EA185D608F0093F33D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A38D88F0185D608F0093F33D /* Pet Feeder CompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet Feeder CompanionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38D88F1185D608F0093F33D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A38D88F9185D608F0093F33D /* Pet Feeder CompanionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pet Feeder CompanionTests-Info.plist"; sourceTree = "<group>"; };
+		A38D88FB185D608F0093F33D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A38D88FD185D608F0093F33D /* Pet_Feeder_CompanionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pet_Feeder_CompanionTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A38D88C6185D608F0093F33D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38D88CF185D608F0093F33D /* CoreGraphics.framework in Frameworks */,
+				A38D88D1185D608F0093F33D /* UIKit.framework in Frameworks */,
+				A38D88CD185D608F0093F33D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38D88ED185D608F0093F33D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38D88F2185D608F0093F33D /* XCTest.framework in Frameworks */,
+				A38D88F4185D608F0093F33D /* UIKit.framework in Frameworks */,
+				A38D88F3185D608F0093F33D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A38D88C0185D608F0093F33D = {
+			isa = PBXGroup;
+			children = (
+				A38D88D2185D608F0093F33D /* Pet Feeder Companion */,
+				A38D88F7185D608F0093F33D /* Pet Feeder CompanionTests */,
+				A38D88CB185D608F0093F33D /* Frameworks */,
+				A38D88CA185D608F0093F33D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A38D88CA185D608F0093F33D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A38D88C9185D608F0093F33D /* Pet Feeder Companion.app */,
+				A38D88F0185D608F0093F33D /* Pet Feeder CompanionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A38D88CB185D608F0093F33D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A38D88CC185D608F0093F33D /* Foundation.framework */,
+				A38D88CE185D608F0093F33D /* CoreGraphics.framework */,
+				A38D88D0185D608F0093F33D /* UIKit.framework */,
+				A38D88F1185D608F0093F33D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A38D88D2185D608F0093F33D /* Pet Feeder Companion */ = {
+			isa = PBXGroup;
+			children = (
+				A38D88DB185D608F0093F33D /* AppDelegate.h */,
+				A38D88DC185D608F0093F33D /* AppDelegate.m */,
+				A38D88DE185D608F0093F33D /* Main_iPhone.storyboard */,
+				A38D88E1185D608F0093F33D /* Main_iPad.storyboard */,
+				A38D88E4185D608F0093F33D /* FirstViewController.h */,
+				A38D88E5185D608F0093F33D /* FirstViewController.m */,
+				A38D88E7185D608F0093F33D /* SecondViewController.h */,
+				A38D88E8185D608F0093F33D /* SecondViewController.m */,
+				A38D88EA185D608F0093F33D /* Images.xcassets */,
+				A38D88D3185D608F0093F33D /* Supporting Files */,
+			);
+			path = "Pet Feeder Companion";
+			sourceTree = "<group>";
+		};
+		A38D88D3185D608F0093F33D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A38D88D4185D608F0093F33D /* Pet Feeder Companion-Info.plist */,
+				A38D88D5185D608F0093F33D /* InfoPlist.strings */,
+				A38D88D8185D608F0093F33D /* main.m */,
+				A38D88DA185D608F0093F33D /* Pet Feeder Companion-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A38D88F7185D608F0093F33D /* Pet Feeder CompanionTests */ = {
+			isa = PBXGroup;
+			children = (
+				A38D88FD185D608F0093F33D /* Pet_Feeder_CompanionTests.m */,
+				A38D88F8185D608F0093F33D /* Supporting Files */,
+			);
+			path = "Pet Feeder CompanionTests";
+			sourceTree = "<group>";
+		};
+		A38D88F8185D608F0093F33D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A38D88F9185D608F0093F33D /* Pet Feeder CompanionTests-Info.plist */,
+				A38D88FA185D608F0093F33D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A38D88C8185D608F0093F33D /* Pet Feeder Companion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38D8901185D608F0093F33D /* Build configuration list for PBXNativeTarget "Pet Feeder Companion" */;
+			buildPhases = (
+				A38D88C5185D608F0093F33D /* Sources */,
+				A38D88C6185D608F0093F33D /* Frameworks */,
+				A38D88C7185D608F0093F33D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pet Feeder Companion";
+			productName = "Pet Feeder Companion";
+			productReference = A38D88C9185D608F0093F33D /* Pet Feeder Companion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A38D88EF185D608F0093F33D /* Pet Feeder CompanionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38D8904185D608F0093F33D /* Build configuration list for PBXNativeTarget "Pet Feeder CompanionTests" */;
+			buildPhases = (
+				A38D88EC185D608F0093F33D /* Sources */,
+				A38D88ED185D608F0093F33D /* Frameworks */,
+				A38D88EE185D608F0093F33D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A38D88F6185D608F0093F33D /* PBXTargetDependency */,
+			);
+			name = "Pet Feeder CompanionTests";
+			productName = "Pet Feeder CompanionTests";
+			productReference = A38D88F0185D608F0093F33D /* Pet Feeder CompanionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A38D88C1185D608F0093F33D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Brown Jar Software";
+				TargetAttributes = {
+					A38D88EF185D608F0093F33D = {
+						TestTargetID = A38D88C8185D608F0093F33D;
+					};
+				};
+			};
+			buildConfigurationList = A38D88C4185D608F0093F33D /* Build configuration list for PBXProject "Pet Feeder Companion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A38D88C0185D608F0093F33D;
+			productRefGroup = A38D88CA185D608F0093F33D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A38D88C8185D608F0093F33D /* Pet Feeder Companion */,
+				A38D88EF185D608F0093F33D /* Pet Feeder CompanionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A38D88C7185D608F0093F33D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38D88E3185D608F0093F33D /* Main_iPad.storyboard in Resources */,
+				A38D88EB185D608F0093F33D /* Images.xcassets in Resources */,
+				A38D88E0185D608F0093F33D /* Main_iPhone.storyboard in Resources */,
+				A38D88D7185D608F0093F33D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38D88EE185D608F0093F33D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38D88FC185D608F0093F33D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A38D88C5185D608F0093F33D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38D88E9185D608F0093F33D /* SecondViewController.m in Sources */,
+				A38D88DD185D608F0093F33D /* AppDelegate.m in Sources */,
+				A38D88E6185D608F0093F33D /* FirstViewController.m in Sources */,
+				A38D88D9185D608F0093F33D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38D88EC185D608F0093F33D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38D88FE185D608F0093F33D /* Pet_Feeder_CompanionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A38D88F6185D608F0093F33D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A38D88C8185D608F0093F33D /* Pet Feeder Companion */;
+			targetProxy = A38D88F5185D608F0093F33D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A38D88D5185D608F0093F33D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A38D88D6185D608F0093F33D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A38D88DE185D608F0093F33D /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A38D88DF185D608F0093F33D /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A38D88E1185D608F0093F33D /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A38D88E2185D608F0093F33D /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		A38D88FA185D608F0093F33D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A38D88FB185D608F0093F33D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A38D88FF185D608F0093F33D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A38D8900185D608F0093F33D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A38D8902185D608F0093F33D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pet Feeder Companion/Pet Feeder Companion-Prefix.pch";
+				INFOPLIST_FILE = "Pet Feeder Companion/Pet Feeder Companion-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A38D8903185D608F0093F33D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pet Feeder Companion/Pet Feeder Companion-Prefix.pch";
+				INFOPLIST_FILE = "Pet Feeder Companion/Pet Feeder Companion-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A38D8905185D608F0093F33D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pet Feeder Companion.app/Pet Feeder Companion";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pet Feeder Companion/Pet Feeder Companion-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Pet Feeder CompanionTests/Pet Feeder CompanionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A38D8906185D608F0093F33D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pet Feeder Companion.app/Pet Feeder Companion";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pet Feeder Companion/Pet Feeder Companion-Prefix.pch";
+				INFOPLIST_FILE = "Pet Feeder CompanionTests/Pet Feeder CompanionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A38D88C4185D608F0093F33D /* Build configuration list for PBXProject "Pet Feeder Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38D88FF185D608F0093F33D /* Debug */,
+				A38D8900185D608F0093F33D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38D8901185D608F0093F33D /* Build configuration list for PBXNativeTarget "Pet Feeder Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38D8902185D608F0093F33D /* Debug */,
+				A38D8903185D608F0093F33D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A38D8904185D608F0093F33D /* Build configuration list for PBXNativeTarget "Pet Feeder CompanionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38D8905185D608F0093F33D /* Debug */,
+				A38D8906185D608F0093F33D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A38D88C1185D608F0093F33D /* Project object */;
+}
