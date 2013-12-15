@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7EE3B67B-C7DE-40F7-B36C-5D519B443E08</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Pet Feeder Companion</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>832EE83E-2E41-48D2-B7A8-DD4FA66A6ACC</key>
+		<string>https://github.com/oddballbutler/PetFeeder.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PetFeederiOS/Pet Feeder Companion/Pet Feeder Companion.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>832EE83E-2E41-48D2-B7A8-DD4FA66A6ACC</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/oddballbutler/PetFeeder.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>832EE83E-2E41-48D2-B7A8-DD4FA66A6ACC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>832EE83E-2E41-48D2-B7A8-DD4FA66A6ACC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Pet Feeder Companion</string>
+		</dict>
+	</array>
+</dict>
+</plist>
