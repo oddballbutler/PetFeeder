@@ -6,16 +6,15 @@
 * Last Updated: 26-Nov-2013
 * 
 */
-#define F_CPU 1200000
 
 //#define _SHIFT_TEST
 //#define _BUTTON_TEST
 #define _LCD_TEST
 
 #include <avr/io.h>
-#include <avr/interrupt.h>
-#include <util/delay.h>
-#include "74hc959.h"
+//#include <avr/interrupt.h>
+//#include <util/delay.h>
+//#include "74hc959.h"
 
 /*
 --Port B connections--
@@ -42,7 +41,7 @@ int main(void)
 {
 	
 	//Set up interrupts////////////////////////////////////////////////////////////////////////
-	cli(); //disable global interrupts
+	//cli(); //disable global interrupts
 	
 	#ifdef _BUTTON_TEST
 	TCCR0A |= 1<<WGM01; //Timer in CTC mode
@@ -58,7 +57,7 @@ int main(void)
 	
 	#endif
 	
-	sei(); //enable gloabl interrupts
+	//sei(); //enable gloabl interrupts
 	///////////////////////////////////////////////////////////////////////////////////////////
 	
 	
