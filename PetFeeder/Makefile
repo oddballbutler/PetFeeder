@@ -6,9 +6,9 @@
 
 
 MCU = atmega328p
+FREQ = 1000000
 FORMAT = ihex
 TARGET = bin/main
-OBJDIR = obj/
 SRC = src/main.c src/lcd.c
 ASRC = 
 OPT = s
@@ -29,7 +29,7 @@ DEBUG = stabs
 CSTANDARD = -std=gnu99
 
 # Place -D or -U options here
-CDEFS =
+CDEFS = -DF_CPU=$(FREQ)
 
 # Place -I options here
 CINCS =

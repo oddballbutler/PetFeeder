@@ -7,8 +7,6 @@
 * 
 */
 
-#define F_CPU 1000000
-
 //#define _SHIFT_TEST
 //#define _BUTTON_TEST
 #define _LCD_TEST
