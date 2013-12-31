@@ -7,13 +7,15 @@
 * 
 */
 
+#define F_CPU 1000000
+
 //#define _SHIFT_TEST
 //#define _BUTTON_TEST
 #define _LCD_TEST
 
 #include <avr/io.h>
 //#include <avr/interrupt.h>
-//#include <util/delay.h>
+#include <util/delay.h>
 //#include "74hc959.h"
 
 /*
@@ -83,7 +85,7 @@ int main(void)
 	#elif defined(_SHIFT_TEST)
 	
 	#elif defined(_LCD_TEST)
-	static uint8_t command = 0;
+	//static uint8_t command = 0;
 	#endif
 	///////////////////////////////////////////////////////////////////////////////////////////
 	
@@ -112,7 +114,7 @@ int main(void)
 		_delay_ms(500);
 		
 		#elif defined(_LCD_TEST)
-		
+		PORTB ^= _BV(PB5);
 		
 		#endif
 	}
