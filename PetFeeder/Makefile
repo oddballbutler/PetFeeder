@@ -32,7 +32,7 @@ CSTANDARD = -std=gnu99
 CDEFS = -DF_CPU=$(FREQ)
 
 # Place -I options here
-CINCS =
+CINCS = -I./include
 
 
 CDEBUG = -g$(DEBUG)
@@ -145,7 +145,8 @@ sym: $(TARGET).sym
 program: $(TARGET).hex $(TARGET).eep
 	$(AVRDUDE) $(AVRDUDE_FLAGS) $(AVRDUDE_WRITE_FLASH) $(AVRDUDE_WRITE_EEPROM)
 
-
+size: $(TARGET).hex
+	$(SIZE) --mcu=$(MCU) -C --totals $(TARGET).elf
 
 
 # Convert ELF to COFF for use in debugging / simulating in AVR Studio or VMLAB.
@@ -221,6 +222,6 @@ depend:
 		>> $(MAKEFILE); \
 	$(CC) -M -mmcu=$(MCU) $(CDEFS) $(CINCS) $(SRC) $(ASRC) >> $(MAKEFILE)
 
-.PHONY:	all build elf hex eep lss sym program coff extcoff clean depend
+.PHONY:	all build elf hex eep lss sym program coff extcoff clean depend size
 
 

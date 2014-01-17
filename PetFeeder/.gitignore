@@ -1,8 +1,9 @@
 ## .gitignore for microcontroller code written in C in the Netbeans IDE
 
-*.o #object files
-*.lst #list files
-
+#object files
+*.o
+#list files
+*.lst
 
 #############
 ## Netbeans
