@@ -5,13 +5,13 @@
 # (GNU make, BSD make, SysV make)
 
 
-MCU = atmega328p
+MCU = atmega16
 FREQ = 1000000
 FORMAT = ihex
 TARGET = bin/main
 SRC = src/main.c src/lcd.c
 ASRC = 
-OPT = s
+OPT = 0
 
 # Name of this Makefile (used for "make depend").
 MAKEFILE = Makefile
@@ -35,7 +35,7 @@ CDEFS = -DF_CPU=$(FREQ)
 CINCS = -I./include
 
 
-CDEBUG = -g$(DEBUG)
+CDEBUG = -g$(DEBUG) -g2
 CWARN = -Wall -Wstrict-prototypes
 CTUNING = -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums
 #CEXTRA = -Wa,-adhlns=$(<:.c=.lst)
@@ -132,20 +132,21 @@ ALL_ASFLAGS = -mmcu=$(MCU) -I. -x assembler-with-cpp $(ASFLAGS)
 # Default target.
 all: build
 
-build: elf hex eep
+build: elf hex eep bin
 
 elf: $(TARGET).elf
 hex: $(TARGET).hex
 eep: $(TARGET).eep
 lss: $(TARGET).lss 
 sym: $(TARGET).sym
+bin: $(TARGET).bin
 
 
 # Program the device.  
 program: $(TARGET).hex $(TARGET).eep
 	$(AVRDUDE) $(AVRDUDE_FLAGS) $(AVRDUDE_WRITE_FLASH) $(AVRDUDE_WRITE_EEPROM)
 
-size: $(TARGET).hex
+size: $(TARGET).elf
 	$(SIZE) --mcu=$(MCU) -C --totals $(TARGET).elf
 
 
@@ -165,7 +166,7 @@ extcoff: $(TARGET).elf
 	$(COFFCONVERT) -O coff-ext-avr $(TARGET).elf $(TARGET).cof
 
 
-.SUFFIXES: .elf .hex .eep .lss .sym
+.SUFFIXES: .elf .hex .eep .lss .sym .bin
 
 .elf.hex:
 	$(OBJCOPY) -O $(FORMAT) -R .eeprom $< $@
@@ -181,6 +182,9 @@ extcoff: $(TARGET).elf
 # Create a symbol table from ELF output file.
 .elf.sym:
 	$(NM) -n $< > $@
+
+.elf.bin:
+	$(OBJCOPY) -R .eeprom -O binary $< $@
 
 
 
@@ -202,7 +206,6 @@ $(TARGET).elf: $(OBJ)
 # Assemble: create object files from assembler source files.
 .S.o:
 	$(CC) -c $(ALL_ASFLAGS) $< -o $@
-
 
 
 # Target: clean project.
